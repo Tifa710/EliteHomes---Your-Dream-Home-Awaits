@@ -4,7 +4,7 @@
 :root {
   --main-color: #7f22fe;
   --bg-nav-color: #f5f3ff;
-  --section-padding: 100px;
+  --section-padding: 70px;
   --main-transition: 0.4s;
   --bg-section: #f9fafb;
 }
@@ -50,7 +50,7 @@ nav ul li a:hover::after {
   outline: none !important;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 992px) {
   nav ul li a::after {
     display: none;
   }
@@ -69,4 +69,84 @@ nav ul li a:hover::after {
   nav ul li:hover i {
     color: var(--main-color) !important;
   }
+}
+.herosection {
+  background-image:
+    linear-gradient(to right, #4d179acc, #59168bcc),
+    url(../images/hero-bg-img.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.herosection .container h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.herosection .container p {
+  font-size: 18px;
+  max-width: 40rem;
+  margin-bottom: 48px;
+}
+.herosection .container {
+  width: 60%;
+}
+.herosection .form-select {
+  appearance: none;
+  background-image: none !important;
+}
+.form-control:hover,
+.form-control:focus,
+.form-select:hover,
+.form-select:focus {
+  border-color: var(--main-color) !important;
+  box-shadow: 0 0 1px 2px var(--main-color);
+}
+.btn-primary {
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+}
+.btn-primary:hover {
+  background-color: #7e00de;
+}
+.Featured-Properties {
+  padding: var(--section-padding);
+  background-color: var(--bg-section);
+}
+.section-heading span {
+  background-color: #f9f5ff;
+  color: var(--main-color);
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+}
+.section-heading span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 50%;
+  right: -40%;
+  background: linear-gradient(to right, var(--main-color), transparent);
+}
+.section-heading span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 50%;
+  left: -40%;
+  background: linear-gradient(to left, var(--main-color), transparent);
+}
+.section-heading h2 {
+  font-size: 48px;
+  font-weight: 900;
+  background: linear-gradient(to right, var(--main-color) 30%, #f89700 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-heading p {
+  max-width: 42rem;
+  color: #4a5565;
 }
