@@ -320,10 +320,7 @@ nav ul li a:hover::after {
 .text-warning {
   color: #4f39f6 !important;
 }
-.nav-tabs .nav-link.active {
-  color: #7f22fe;
-  background-color: transparent;
-}
+
 .nav-tabs .nav-link {
   transition: var(--main-transition);
   border: none;
@@ -339,6 +336,17 @@ nav ul li a:hover::after {
 .nav-tabs .nav-link:hover {
   background-color: #f5f3ff;
   border-bottom: 2px solid #dbd4fc;
+}
+.nav-tabs .nav-item .active {
+  color: #7f22fe;
+  background-color: #f5f3ff;
+  border-bottom: 2px solid var(--main-color);
+}
+.nav-tabs .nav-item .active i {
+  color: #7f22fe !important;
+}
+.nav-tabs .nav-item .active span {
+  color: #7f22fe !important;
 }
 .Testimonials {
   padding: var(--section-padding);
@@ -366,4 +374,75 @@ nav ul li a:hover::after {
   background: linear-gradient(to right, white, white);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.carousel-item .carsol-width {
+  width: 70%;
+}
+.carousel-item img {
+  width: 70px;
+}
+.carousel-item .row .d-flex p {
+  max-width: 240px;
+}
+.carousel-indicators [data-bs-target] {
+  height: 12px;
+  width: 12px;
+}
+.carousel-control-next-icon {
+  background-image: none;
+}
+.carousel-control-prev-icon {
+  background-image: none;
+}
+.prev-carasol {
+  background-color: #7245ac;
+  transition: var(--main-transition);
+}
+.next-carasol {
+  background-color: #7245ac;
+  transition: var(--main-transition);
+}
+.faq {
+  padding: var(--section-padding);
+  background-color: #f9fafb;
+}
+.faq .section-heading span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 50%;
+  right: -60%;
+  background: linear-gradient(to right, var(--main-color), transparent);
+}
+.faq .section-heading span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 50%;
+  left: -60%;
+  background: linear-gradient(to left, var(--main-color), transparent);
+}
+.faq .section-heading h2 {
+  background: linear-gradient(to right, var(--main-color), var(--main-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accordion-item {
+  border: none;
+}
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion-button {
+  transition: var(--main-transition) ease;
+}
+.accordion-button:hover {
+  background-color: #f9fafb;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #000;
 }
