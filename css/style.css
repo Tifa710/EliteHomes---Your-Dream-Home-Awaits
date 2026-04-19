@@ -446,3 +446,166 @@ nav ul li a:hover::after {
   background-color: #fff;
   color: #000;
 }
+.contact {
+  padding: var(--section-padding);
+}
+.contact .section-heading span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 50%;
+  right: -65%;
+  background: linear-gradient(to right, var(--main-color), transparent);
+}
+.contact .section-heading span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 50%;
+  left: -65%;
+  background: linear-gradient(to left, var(--main-color), transparent);
+}
+.bg-primary {
+  background-color: var(--main-color) !important;
+}
+.contact-card-phone {
+  border: 2px solid gray;
+  transition: var(--main-transition);
+}
+.contact-card-phone:hover {
+  border: 1px solid var(--main-color) !important;
+  transform: translateY(-15px);
+}
+.bg-phone {
+  transition: var(--main-transition);
+}
+.contact-card-phone:hover .bg-phone {
+  padding: 18px !important;
+}
+.contact-card-mail {
+  border: 2px solid gray;
+  transition: var(--main-transition);
+}
+.contact-card-mail:hover {
+  border: 1px solid #9e26fe !important;
+  transform: translateY(-15px);
+}
+.bg-mail {
+  background-color: #9e26fe !important;
+  transition: var(--main-transition);
+}
+.contact-card-mail:hover .bg-mail {
+  padding: 18px !important;
+}
+.text-mail {
+  color: #9e26fe;
+}
+.contact-card-location {
+  border: 2px solid gray;
+  transition: var(--main-transition);
+}
+.contact-card-location:hover {
+  border: 1px solid #f3a8ff !important;
+  transform: translateY(-15px);
+}
+.bg-location {
+  background: linear-gradient(to right, #e553de, #f7904d) !important;
+  transition: var(--main-transition);
+}
+.contact-card-location:hover .bg-location {
+  padding: 18px !important;
+}
+.text-location {
+  color: #e60076;
+}
+
+.contact-card-comments {
+  border: 2px solid gray;
+  transition: var(--main-transition);
+}
+.contact-card-comments:hover {
+  border: 1px solid #a3b3ff !important;
+  transform: translateY(-15px);
+}
+.bg-comments {
+  background-color: #574bfb !important;
+  transition: var(--main-transition);
+}
+.contact-card-comments:hover .bg-comments {
+  padding: 18px !important;
+}
+.text-comments {
+  color: #574bfb;
+}
+.bg-contact-info {
+  background-color: #f6f7f8;
+}
+.text-size-contact {
+  color: rgba(255, 255, 255, 0.875);
+  font-size: 14px;
+}
+.social-media .facebook {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.151);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.social-media .facebook:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.379);
+}
+.social-media .twitter {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.151);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.social-media .twitter:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.379);
+}
+.social-media .instagram {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.151);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.social-media .instagram:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.379);
+}
+.social-media .linkedin-in {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.151);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.social-media .linkedin-in:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.379);
+}
+.social-media .youtube {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.151);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.social-media .youtube:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.379);
+}
+footer {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #4d1799 70%, #59168b);
+}
+.footer-dash {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.159);
+}
