@@ -19,7 +19,7 @@
   <nav
     class="navbar navbar-expand-lg bg-body-tertiary p-3 position-fixed fixed-top"
   >
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand fw-bolder fs-4" href="#">EliteHomes</a>
       <button
         class="navbar-toggler"
@@ -77,7 +77,7 @@
             <a class="nav-link" href="#faq">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -86,12 +86,9 @@
   <br />
   <body>
     <main>
-      <header
-        id="herosecttion"
-        class="herosection pos overflow-auto min-vh-100"
-      >
+      <header id="herosecttion" class="herosection min-vh-100">
         <div
-          class="container vh-100 d-flex flex-column justify-content-center align-items-center text-center"
+          class="container min-vh-100 d-flex flex-column justify-content-center align-items-center text-center"
         >
           <div class="row justify-content-center align-items-center">
             <h2 class="text-white mt-5">Find Your Dream Home</h2>
@@ -210,7 +207,7 @@
       </header>
 
       <section id="Featured-Properties" class="Featured-Properties">
-        <div class="container-fluid">
+        <div class="container">
           <div class="text-center section-heading">
             <span class="text-uppercase border border-2 rounded-5"
               >Premium Collection
@@ -1427,7 +1424,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact position-relative">
         <div class="container">
           <div class="text-center section-heading">
             <span class="text-uppercase border border-2 rounded-5"
@@ -1498,7 +1495,7 @@
           </div>
           <br /><br />
           <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="p-4 bg-contact-info rounded-4 mb-4">
                 <h4 class="mb-4 fw-bold">Contact Information</h4>
                 <div class="d-flex align-items-start g-2 mb-4">
@@ -1597,49 +1594,179 @@
                 </div>
               </div>
             </div>
-            <div class="col-8"></div>
+            <div class="col-md -8 mt-sm-3 mt-md-0">
+              <div class="border p-5 rounded-4">
+                <h3 class="fw-bold mb-2">Send us a message</h3>
+                <p class="text-secondary mb-4">
+                  Fill out the form below and we'll get back to you as soon as
+                  possible
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="mb-1" for="fname"
+                      >First Name<span class="color-red">*</span></label
+                    >
+                    <input
+                      required
+                      id="fname"
+                      type="text"
+                      class="form-control rounded-3 bg-secondary-subtle border mb-4"
+                      placeholder="John"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="mb-1" for="Lname"
+                      >Last Name<span class="color-red">*</span></label
+                    >
+                    <input
+                      form="Lname"
+                      required
+                      type="text"
+                      class="form-control rounded-3 bg-secondary-subtle border mb-4"
+                      placeholder="Doe"
+                      aria-label="Last name"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="mb-1" for="Email"
+                      >Email<span class="color-red">*</span></label
+                    >
+                    <input
+                      required
+                      id="Email"
+                      type="email"
+                      class="form-control rounded-3 bg-secondary-subtle border mb-4"
+                      placeholder="John@example.com"
+                      aria-label="Email"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="mb-1" for="pnumber">Phone Number</label>
+                    <input
+                      form="pnumber"
+                      required
+                      type="tel"
+                      class="form-control rounded-3 bg-secondary-subtle border mb-4"
+                      placeholder="+1 (555) 000-0000"
+                      aria-label="Phone Number"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="interstedin" class="mb-1"
+                      >I'm interested in
+                    </label>
+                    <select
+                      id="interstedin"
+                      class="form-select rounded-3 bg-secondary-subtle border mb-4"
+                      aria-label="Default select example"
+                    >
+                      <option>Select a service</option>
+                      <option>Buying a home</option>
+                      <option>Selling a home</option>
+                      <option>Renting a property</option>
+                      <option>Investment opportunities</option>
+                      <option>Commercial real estate</option>
+                      <option>Property management</option>
+                      <option>Market consultation</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Example textarea <span class="color-red">*</span></label
+                    >
+                    <textarea
+                      class="form-control rounded-3 bg-secondary-subtle border mb-4"
+                      id="exampleFormControlTextarea1"
+                      rows="5"
+                      required
+                      placeholder="Tell us about your real estate needs..."
+                    ></textarea>
+                  </div>
+                  <div class="bg-formcheck mb-4 p-3 rounded-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="checkDefault"
+                      />
+                      <label class="form-check-label" for="checkDefault">
+                        I agree to receive marketing communications and updates
+                        from EliteHomes
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 btn btn-primary p-3 mb-4">
+                    <span class="text-white fw-bold fs-5">Send Message</span>
+                    <i
+                      class="fa-solid fa-paper-plane fa-lg"
+                      style="color: rgb(255, 255, 255)"
+                    ></i>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-secondary">
+                      We respect your privacy. Your information will never be
+                      shared.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Shape-up1">
+            <div class="shape-parent">
+              <div class="Shape-upsm1"></div>
+            </div>
+          </div>
+          <div class="Shape-up2">
+            <div class="shape-parent2">
+              <div class="Shape-upsm2"></div>
+            </div>
           </div>
         </div>
       </section>
 
       <footer class="text-center">
-        <div
-          class="d-flex justify-content-between align-items-center flex-sm-column flex-md-row"
-        >
-          <h3 class="fw-bold text-white">EliteHomes</h3>
-          <p class="mb-0 text-white-50 mt-sm-2">
-            © 2025 EliteHomes. All rights reserved.
-          </p>
-          <div class="d-flex justify-content-evenly social-media mt-sm-2">
-            <span class="facebook p-3 me-2"
-              ><i
-                class="fa-brands fa-facebook-f"
-                style="color: rgb(255, 255, 255)"
-              ></i
-            ></span>
-            <span class="twitter p-3 me-2"
-              ><i
-                class="fa-brands fa-twitter"
-                style="color: rgb(255, 255, 255)"
-              ></i
-            ></span>
-            <span class="instagram p-3 me-2"
-              ><i
-                class="fa-brands fa-instagram"
-                style="color: rgb(255, 255, 255)"
-              ></i
-            ></span>
-            <span class="linkedin-in p-3 me-2"
-              ><i
-                class="fa-brands fa-linkedin-in"
-                style="color: rgb(255, 255, 255)"
-              ></i
-            ></span>
+        <div class="container">
+          <div
+            class="d-flex justify-content-between align-items-center flex-sm-column flex-md-row"
+          >
+            <h3 class="fw-bold text-white">EliteHomes</h3>
+            <p class="mb-0 text-white-50 mt-sm-2">
+              © 2025 EliteHomes. All rights reserved.
+            </p>
+            <div class="d-flex justify-content-evenly social-media mt-sm-2">
+              <span class="facebook p-3 me-2"
+                ><i
+                  class="fa-brands fa-facebook-f"
+                  style="color: rgb(255, 255, 255)"
+                ></i
+              ></span>
+              <span class="twitter p-3 me-2"
+                ><i
+                  class="fa-brands fa-twitter"
+                  style="color: rgb(255, 255, 255)"
+                ></i
+              ></span>
+              <span class="instagram p-3 me-2"
+                ><i
+                  class="fa-brands fa-instagram"
+                  style="color: rgb(255, 255, 255)"
+                ></i
+              ></span>
+              <span class="linkedin-in p-3 me-2"
+                ><i
+                  class="fa-brands fa-linkedin-in"
+                  style="color: rgb(255, 255, 255)"
+                ></i
+              ></span>
+            </div>
           </div>
-        </div>
-        <div class="footer-dash w-100 mt-3"></div>
-        <div class="d-inline-block mt-4 text-white">
-          Made with ❤️ for finding your dream home
+          <div class="footer-dash w-100 mt-3"></div>
+          <div class="d-inline-block mt-4 text-white">
+            Made with ❤️ for finding your dream home
+          </div>
         </div>
       </footer>
     </main>

@@ -83,6 +83,7 @@ nav ul li a:hover::after {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding-block: var(--section-padding);
 }
 .herosection .container h2 {
   font-size: 60px;
@@ -608,4 +609,87 @@ footer {
 .footer-dash {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.159);
+}
+.color-red {
+  color: red;
+}
+textarea {
+  resize: none;
+}
+.bg-secondary-subtle {
+  background-color: #f9fafb !important;
+}
+.bg-formcheck {
+  background-color: #f5f3ff;
+}
+.form-check-input:focus {
+  background-color: var(--main-color);
+  box-shadow: none;
+}
+.form-check-input:checked {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.contact .btn-primary {
+  transition: var(--main-transition);
+}
+.contact .btn-primary:hover {
+  background-color: var(--main-color);
+  transform: translateY(-5px);
+}
+.Shape-up1 {
+  position: absolute;
+  background-color: #f9f4ff;
+  border-radius: 50%;
+  width: 20%;
+  height: 300px;
+  top: -5%;
+  right: -5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape-parent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Shape-upsm1 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #ddd6ff;
+  border-radius: 50%;
+  bottom: 0;
+  left: 0%;
+}
+.Shape-up2 {
+  position: absolute;
+  background-color: #f9f4ff;
+  border-radius: 50%;
+  width: 20%;
+  height: 300px;
+  bottom: -5%;
+  left: -5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape-parent2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Shape-upsm2 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #ddd6ff;
+  border-radius: 50%;
+  top: 0;
+  right: 0%;
 }
